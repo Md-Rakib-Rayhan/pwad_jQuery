@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="0_jquery_3_i_download.js"></script>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" id="first"> <br>
+        <input type="text" id="second">
+    </form>
+
+    <div class="show"></div>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#first, #second").blur(function () {
+                // let first = $("#first").val(); Selection of value
+
+                let first = parseInt($("#first").val());
+                let second = parseInt($("#second").val());
+                // console.log(first);
+
+                let result = first + second;
+                $(".show").text(result);
+            });
+
+
+            // Same
+            // $("#first, #second").on('blur', function () {});
+
+
+
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="0_jquery_3_i_download.js"></script>
+</head>
+<body>
+
+
+    <p>I am p tag</p>
+    
+    <div class="myclass">I am class</div>
+    <div id="myid">I am id</div>
+
+    <p>I am p tag</p>
+    
+
+
+
+    <hr>
+
+    <h1>Hello</h1>
+    <div id="changeit">No data</div>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            // tag selection
+            $("p").css("background-color", "red"); // will select all p
+
+            // class / id selection
+            $(".myclass").css("background-color", "skyblue");
+            $("#myid").css("background-color", "lightgreen");
+
+
+            // inner html selection
+            let mytxt = $("h1").text();
+            // alert(a);
+
+            $("#changeit").text("\""+ mytxt + "\"" + " এইটা H1 এর Data");
+        });
+    </script>
+</body>
+</html>
