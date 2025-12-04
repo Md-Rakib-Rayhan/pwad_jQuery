@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="0_jquery_3_i_download.js"></script>
+</head>
+<body>
+
+<!-- 
+    <p>I am p tag 1</p>
+    <p>I am p tag 2</p>
+    <p>I am p tag 3</p> -->
+    <p>I am p tag 4</p>
+    
+
+
+    <hr>
+    <div id="changeit"></div>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            let all_p = $("p");
+            
+            for(i=0; i < all_p.length; i++){
+                console.log(all_p[i].innerHTML);
+            }
+
+
+        });
+    </script>
+    
+</body>
+</html>

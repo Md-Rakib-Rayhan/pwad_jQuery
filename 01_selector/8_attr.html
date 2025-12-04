@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<h1 title="I am h1 title">This is my Heading</h1>
+
+
+
+
+<script>
+    $(document).ready(function(){
+
+        let get_title = $("h1").attr("title");
+        // alert(get_title);
+        $("h1").hover(function(){
+            alert(get_title);
+        })
+
+
+
+    });
+</script>
+</body>
+</html>

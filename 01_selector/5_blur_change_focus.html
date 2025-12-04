@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+    $(".input1").blur(function(){
+        alert("This input field has lost its focus.");
+    });
+
+
+    $(".input2").change(function(){
+        alert("The text has been changed.");
+    });
+
+
+    $(".input3").focus(function(){
+        $("span").css("display", "inline").fadeOut(2000);
+    });
+
+
+});
+
+
+
+</script>
+</head>
+<body>
+
+Enter your name: <input class="input1" type="text">
+<p>Write something in the input field, and then click outside the field to lose focus (blur).</p>
+
+<br><br> <hr><br><br> 
+
+<input class="input2" type="text">
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+
+<br><br> <hr> <br><br> 
+
+<input class="input3" type="text">
+<span style="display: none;" >Nice to meet you!</span>
+<p>Click in the input field to get focus.</p>
+
+</body>
+</html>
