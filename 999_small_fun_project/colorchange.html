@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(19, 180, 100);
+        }
+        .main{
+            width: 100%;
+            min-height: 100vh;
+
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .billi{
+            position: absolute;
+            bottom: 0;
+            left: -180px;
+        }
+
+        #iamlazy{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="200.gif" alt="">
+    </div>
+
+    <div class="billi">
+        <img id="iamlazy" src="tumb.gif" alt="Bottom Image">
+    </div>
+
+    <script>
+        // document.body.style.backgroundColor = getRandomColor();
+        setInterval(function(){
+            document.body.style.backgroundColor = getRandomColor();
+        }, 800);
+
+// Pastel color
+        function getRandomColor() {
+            const r = Math.floor((Math.random() * 127) + 127);
+            const g = Math.floor((Math.random() * 127) + 127);
+            const b = Math.floor((Math.random() * 127) + 127);
+
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+// Normal color
+        // function getRandomColor() {
+        //     // Generate a random number between 0 and 255 for each RGB component
+        //     const r = Math.floor(Math.random() * 256);
+        //     const g = Math.floor(Math.random() * 256);
+        //     const b = Math.floor(Math.random() * 256);
+
+        //     return `rgb(${r}, ${g}, ${b})`;
+        // }
+    </script>
+
+<!-- 2nd image -->
+<script>
+    lazyCat = document.getElementById("iamlazy");
+
+    setTimeout(() => {
+        lazyCat.style.display = "block";
+
+        setTimeout(() => {
+            lazyCat.style.display = "none";
+        }, 5000);
+
+    }, 10000);
+
+
+</script>
+</body>
+</html>

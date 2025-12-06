@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        $(document).ready(function(){
+
+            $("#division").change(function(){
+                let div_id = $("#division").val();
+
+                    // call this file      peramitter      get return
+                $.post("division_list.php", {id:div_id}, function(data){
+                    $("#hide").css("display", "block");
+                    runit(data);
+                })
+            })
+        })
+
+    </script>
+
+<h3>Select Your District</h3>
+    <form action="">
+        <select name="" id="division">
+            <option value="">Select One</option>
+            <option value="1">Rajshahi</option>
+            <option value="2">Dhaka</option>
+            <option value="3">Cattogram</option>
+            <option value="4">Barisal</option>
+        </select> <br>
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <form id="hide">
+        <select id="citis">
+            <script>
+                function runit(data){
+                    $('#citis').html(data);
+                }
+
+            </script>
+        </select> 
+    </form>
+
+    
+
+
+
+
+
+
+
+    
+</body>
+</html>

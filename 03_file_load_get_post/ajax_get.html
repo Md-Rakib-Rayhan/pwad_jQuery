@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    
+$(document).ready(function(){
+
+    $("button").click(function() {
+        
+        // Run the this file in localhost(xamp) to see php ehco(output), else you will get full file data
+        $.get("helloworld.php", function(data, status){
+
+        // alert(data);
+        // $("#show").text(data);
+        $("#show").html(data); // to load the html tag (present in php)
+        })
+    })
+
+
+});
+
+</script>
+</head>
+<body>
+
+<button>Get php data</button>
+<div id="show"></div>
+
+</body>
+</html>
