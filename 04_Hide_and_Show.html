@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".p1").hide();
+    $(".p2").hide(2000);
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+
+</script>
+</head>
+<body>
+
+<p class="p1">If you click on the "Hide" button, I will disappear.</p>
+<p class="p2">I will disappear slowly slowly</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
