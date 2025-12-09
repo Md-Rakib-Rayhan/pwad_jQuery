@@ -19,7 +19,7 @@
             $("#division").change(function(){
                 let div_id = $("#division").val();
 
-                    // call this file      peramitter      get return
+                    // call this file, url      peramitter      get return
                 $.post("division_list.php", {id:div_id}, function(data){
                     $("#hide").css("display", "block");
                     runit(data);

@@ -1,0 +1,8 @@
+get, post, ajax, each, show/hide er peramitter for slow,fast etc
+
+delay, Query.noConflict(true), width(), outerWidth()
+
+restful page (no load ajax php page)
+https://tutorialzine.com/2009/09/simple-ajax-website-jquery
+
+animate, addclass remove class,
