@@ -9,3 +9,11 @@ animate, addclass remove class,
 
 
 sibling
+
+
+$, ready, first, last, parent, children, siblings, next, nextAll, find,
+css, text, html, val, attr,
+append, prepend, before,
+hide, toggle, animate,
+:first-child, :odd, :button, [href]
+
