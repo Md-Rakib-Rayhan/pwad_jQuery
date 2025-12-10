@@ -6,3 +6,6 @@ restful page (no load ajax php page)
 https://tutorialzine.com/2009/09/simple-ajax-website-jquery
 
 animate, addclass remove class,
+
+
+sibling
